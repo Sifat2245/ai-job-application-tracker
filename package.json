@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "node api.js && next dev --turbopack",
     "prebuild": "prisma generate",
-    "build": "next build --turbopack",
-    "start": "next start",
+    "build": "node api.js && next build --turbopack",
+    "start": "node api.js && next start",
     "lint": "eslint"
   },
   "dependencies": {
